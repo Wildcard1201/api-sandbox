@@ -16,8 +16,9 @@ async function renderFact() {
     console.log('made it this far')
 
     facts.forEach((fact) => {
-        html += fact
+        html += fact.fact
     })
+
 
     let container = document.getElementById('container')
     container.innerHTML = html;
