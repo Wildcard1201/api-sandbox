@@ -19,7 +19,14 @@ async function getData() {
     const user = data.results[0]
     let { title, first, last} = user.name
 
-    html += `Title: ${title} <br> First: ${first} <br> Last: ${last}`
+
+
+    html += `<pre>
+    Title: ${title}
+    First: ${first}
+    Last: ${last}
+    </pre>`
+    console.log(html)
     
     container.innerHTML = html
 }
