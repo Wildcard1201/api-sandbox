@@ -15,8 +15,13 @@ async function getData() {
     console.log(data.results)
 
     //display
+    let html = ''
+    const user = data.results[0]
+    let { title, first, last} = user.name
 
+    html += `Title: ${title} <br> First: ${first} <br> Last: ${last}`
     
+    container.innerHTML = html
 }
 
 getData()
