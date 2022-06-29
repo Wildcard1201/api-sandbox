@@ -16,15 +16,21 @@ async function getData() {
 
     //display
     let html = ''
+
     const user = data.results[0]
     let { title, first, last} = user.name
-
+    let { date, age } = user.dob
+    let { city, state, country } = user.location
 
 
     html += `<pre>
     Title: ${title}
     First: ${first}
     Last: ${last}
+    Age: ${age}
+    City: ${city}
+    State: ${state}
+    Country: ${country}
     </pre>`
     console.log(html)
     
