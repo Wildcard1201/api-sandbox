@@ -24,7 +24,7 @@ async function getData() {
     let email = user.email
     let phone = user.phone
     let cell = user.cell
-    let { thumbnail } = user.picture
+    let { large, medium, thumbnail } = user.picture
 
     html += `<pre>
     Title: ${title}
@@ -37,7 +37,9 @@ async function getData() {
     Email: ${email}
     Phone: ${phone}
     Cell: ${cell}
-    <img src="${thumbnail}" alt="user picture" />
+    <img src="${thumbnail}" alt="thumbnail user picture" />
+    <img src="${medium}" alt="medium user picture" />
+    <img src="${large}" alt="large user picture" />
     </pre>`
     console.log(html)
     
