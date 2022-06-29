@@ -21,7 +21,10 @@ async function getData() {
     let { title, first, last} = user.name
     let { date, age } = user.dob
     let { city, state, country } = user.location
-
+    let email = user.email
+    let phone = user.phone
+    let cell = user.cell
+    let { thumbnail } = user.picture
 
     html += `<pre>
     Title: ${title}
@@ -31,6 +34,10 @@ async function getData() {
     City: ${city}
     State: ${state}
     Country: ${country}
+    Email: ${email}
+    Phone: ${phone}
+    Cell: ${cell}
+    <img src="${thumbnail}" alt="user picture" />
     </pre>`
     console.log(html)
     
