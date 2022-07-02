@@ -27,6 +27,7 @@ async function getData() {
     let { large, medium, thumbnail } = user.picture
 
     html += `<pre>
+<img src="${medium}" alt="medium user picture" class="picture" />
 Title: ${title}
 First: ${first}
 Last: ${last}
@@ -37,9 +38,6 @@ Country: ${country}
 Email: ${email}
 Phone: ${phone}
 Cell: ${cell}
-<img src="${thumbnail}" alt="thumbnail user picture" />
-<img src="${medium}" alt="medium user picture" />
-<img src="${large}" alt="large user picture" />
     </pre>`
     console.log(html)
     

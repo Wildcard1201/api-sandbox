@@ -26,3 +26,7 @@ h1 {
     min-width: 300px;
     min-height: 400px;
 }
+
+.picture {
+    border: 1px solid #000;
+}
