@@ -16,6 +16,7 @@ async function getData() {
 
     //display
     let html = ''
+    let html2 = ''
 
     const user = data.results[0]
     let { title, first, last} = user.name
