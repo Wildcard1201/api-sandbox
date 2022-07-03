@@ -1,6 +1,7 @@
 // script below
 let urlDisplay = document.getElementById('url-display')
 let container = document.getElementById('container')
+let container2 = document.getElementById('container2')
 let url = 'https://randomuser.me/api/'
 
 function printUrl() {
@@ -41,8 +42,18 @@ Phone: ${phone}
 Cell: ${cell}
     </pre>`
     console.log(html)
+
+    html2 += `
+        <img src="${medium}" alt="medium user picture" class="picture" />
+        <div>
+            Title: ${title} <br>
+            First: ${first} <br>
+            Last: ${last}
+        </div>
+    `
     
     container.innerHTML = html
+    container2.innerHTML = html2
 }
 
 getData()
