@@ -20,6 +20,17 @@ h1 {
     width: 100%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 30%;
+}
+
 .card {
     margin: 10px;
     border: 2px solid #222;
@@ -33,7 +44,9 @@ h1 {
 }
 
 .card-divider {
+    
     margin: 5px;
     border: 1px solid #555;
+    width: 90%;
     padding: 3px;
 }
