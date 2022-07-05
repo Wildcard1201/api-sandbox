@@ -45,10 +45,21 @@ Cell: ${cell}
 
     html2 += `
         <img src="${medium}" alt="medium user picture" class="picture" />
-        <div>
+        <div class="card-divider">
             Title: ${title} <br>
             First: ${first} <br>
-            Last: ${last}
+            Last: ${last} <br>
+            Age: ${age}
+        </div>
+        <div class="card-divider">
+            City: ${city} <br>
+            State: ${state} <br>
+            Country: ${country}
+        </div>
+        <div class="card-divider">
+            Email: ${email} <br>
+            Phone: ${phone} <br>
+            Cell: ${cell}
         </div>
     `
     

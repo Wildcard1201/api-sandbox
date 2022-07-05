@@ -31,3 +31,9 @@ h1 {
 .picture {
     border: 1px solid #000;
 }
+
+.card-divider {
+    margin: 5px;
+    border: 1px solid #555;
+    padding: 3px;
+}
