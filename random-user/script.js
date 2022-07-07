@@ -1,7 +1,6 @@
 // script below
 let urlDisplay = document.getElementById('url-display')
 let container = document.getElementById('container')
-let container2 = document.getElementById('container2')
 let url = 'https://randomuser.me/api/'
 
 function printUrl() {
@@ -15,9 +14,7 @@ async function getData() {
     const data = await response.json()
     console.log(data.results)
 
-    //display
     let html = ''
-    let html2 = ''
 
     const user = data.results[0]
     let { title, first, last} = user.name
@@ -28,22 +25,7 @@ async function getData() {
     let cell = user.cell
     let { large, medium, thumbnail } = user.picture
 
-    html += `<pre>
-<img src="${medium}" alt="medium user picture" class="picture" />
-Title: ${title}
-First: ${first}
-Last: ${last}
-Age: ${age}
-City: ${city}
-State: ${state}
-Country: ${country}
-Email: ${email}
-Phone: ${phone}
-Cell: ${cell}
-    </pre>`
-    console.log(html)
-
-    html2 += `
+    html += `
         <img src="${medium}" alt="medium user picture" class="picture" />
         <div class="card-divider">
             Title: ${title} <br>
@@ -64,7 +46,6 @@ Cell: ${cell}
     `
     
     container.innerHTML = html
-    container2.innerHTML = html2
 }
 
 getData()
