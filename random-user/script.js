@@ -39,7 +39,7 @@ async function getData() {
             Country: ${country}
         </div>
         <div class="card-divider">
-            Email: ${email} <br>
+            Email: <br> ${email} <br>
             Phone: ${phone} <br>
             Cell: ${cell}
         </div>
