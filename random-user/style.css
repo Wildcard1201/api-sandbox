@@ -51,4 +51,7 @@ h1 {
     width: 95%;
     padding: 5px;
     background-color: hsl(24, 27%, 95%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 500;
 }
