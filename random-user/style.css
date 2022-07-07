@@ -20,23 +20,20 @@ h1 {
     width: 100%;
 }
 
-.container {
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container img {
-    width: 30%;
-}
-
-.card {
     margin: 10px;
     border: 2px solid #222;
     padding: 8px;
     min-width: 300px;
     min-height: 400px;
+}
+
+.card img {
+    width: 30%;
 }
 
 .picture {
