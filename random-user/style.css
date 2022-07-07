@@ -23,27 +23,29 @@ h1 {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 10px;
     border: 2px solid #222;
+    border-radius: 10px;
     padding: 8px;
     min-width: 300px;
     min-height: 400px;
-}
-
-.card img {
-    width: 30%;
+    background-color: hsl(34, 47%, 91%);
 }
 
 .picture {
     border: 1px solid #000;
+    border-radius: 50%;
+    width: 30%;
 }
 
 .card-divider {
     
     margin: 5px;
     border: 1px solid #555;
+    border-radius: 10px;
     width: 90%;
-    padding: 3px;
+    padding: 5px;
+    background-color: hsl(24, 37%, 100%);
 }
